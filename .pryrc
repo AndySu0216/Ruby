@@ -1,0 +1,1 @@
+Pry.config.theme = "pry-classic-256"
