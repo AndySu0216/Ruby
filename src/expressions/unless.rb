@@ -13,4 +13,12 @@ class ExpressonUnless
             puts arr
         end
     end
+
+    def nil_and_false(condition)
+        if condition
+            return "not nil"
+        else
+            return nil
+        end
+    end
 end

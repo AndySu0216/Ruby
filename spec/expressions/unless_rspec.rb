@@ -27,3 +27,18 @@ RSpec.describe "if_with_else" do
         expect { expressonUnless.if_with_else(arr) }.to output("").to_stdout
     end
 end
+
+RSpec.describe "In condition statement" do
+    it "nil is treated as false" do
+         expressonUnless = ExpressonUnless.new
+
+         result = expressonUnless.nil_and_false(nil)
+         expect(result).to eq(nil)
+
+         result = expressonUnless.nil_and_false(false)
+         expect(result).to eq(nil)
+
+         result = expressonUnless.nil_and_false(true)
+         expect(result).to eq("not nil")
+    end
+end
